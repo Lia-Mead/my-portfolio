@@ -1,0 +1,17 @@
+.about-con {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 2em;
+    color: #201f1f;
+    margin-top: -100px;
+    background-color: #ffece6;
+    padding: 80px 40px;
+    border-radius: 20px 0;
+}
+
+.con {
+    min-height: calc(100vh - 220px);
+}

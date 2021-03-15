@@ -1,0 +1,40 @@
+.me-con {
+    display: flex;
+    flex-flow: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* margin: 20px 0; */
+    z-index: 200;
+}
+
+.name {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 3em;
+    margin-right: 11px;
+    text-transform: uppercase;
+}
+
+/* 
+.name {
+    color: #007bff;
+    font-weight: 500;
+    font-size: 3em;
+    margin-right: 11px;
+} */
+
+.title {
+    font-size: 3em;
+    font-weight: 300;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .name {
+        margin-right: 0px;
+    }
+
+    .title {
+        margin: 0;
+    }
+}
