@@ -144,3 +144,6 @@ export default function Projects() {
 }
 
 // className={`${pro.css}`}
+
+// autoplay
+// <img className="pro-img" src={pro.gif} alt={`screenshot of ${pro.name}`} />
