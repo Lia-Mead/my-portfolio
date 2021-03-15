@@ -56,3 +56,9 @@ p {
         transform: rotate(360deg);
     }
 }
+
+@media only screen and (max-width: 900px) {
+    h2 {
+        font-size: 2em;
+    }
+}

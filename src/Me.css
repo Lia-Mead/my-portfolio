@@ -31,10 +31,23 @@
 
 @media only screen and (max-width: 900px) {
     .name {
-        margin-right: 0px;
+        font-size: 2em;
     }
 
     .title {
         margin: 0;
+        font-size: 2em;
+    }
+
+    .me-con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .name {
+        margin-right: 0px;
     }
 }

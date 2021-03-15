@@ -5,12 +5,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* h1,
-h2 {
-    font-family: "Bebas Neue", "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-} */
-
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;

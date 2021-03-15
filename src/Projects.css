@@ -228,7 +228,7 @@ a {
 
 @media only screen and (max-width: 900px) {
     .bg-img {
-        height: 900px;
+        height: 100%;
     }
 
     .gif_player,
@@ -241,12 +241,26 @@ a {
         height: auto;
     }
 
+    .pro-con {
+        margin: -55px 0 20px;
+    }
     .title-con {
         bottom: 880px;
     }
 
     .stack {
         width: 20%;
+    }
+    .go-box {
+        width: 60px;
+        height: 55px;
+    }
+    .pro p {
+        font-size: 1em;
+    }
+
+    .pro-con .pro:first-child h2 {
+        margin-top: inherit;
     }
 }
 
