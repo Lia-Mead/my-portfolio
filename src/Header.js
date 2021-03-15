@@ -6,8 +6,8 @@ import Menu from "./Menu";
 export default function Header() {
     return (
         <header>
-            <Link className="logo" to="/">
-                <img className="" src={Logo} alt="logo" />
+            <Link className="logo rotate-center" to="/">
+                <img src={Logo} alt="logo" />
             </Link>
 
             <div className="menu-right">
