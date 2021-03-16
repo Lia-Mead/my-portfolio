@@ -1,6 +1,6 @@
 import "./Projects.css";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GifPlayer from "react-gif-player";
 // import { ReactComponent as Next } from "./next.svg";
 // import { ReactComponent as Play } from "./play.svg";
@@ -8,6 +8,19 @@ import Me from "./Me";
 
 export default function Projects() {
     const [isPlaying, setIsPlaying] = useState(false);
+    const [mQuery, setMQuery] = useState();
+    const [screenSize, setScreenSize] = useState();
+
+    useEffect(() => {
+        window.addEventListener("resize", updateSize);
+        setScreenSize(window.innerWidth);
+    }, []);
+
+    const updateSize = () => {
+        // console.log("size updated");
+        let mql = window.matchMedia("(max-width: 800px)");
+        setMQuery(mql.matches);
+    };
 
     const playOrPause = (e) => {
         setIsPlaying(!isPlaying);
@@ -105,7 +118,14 @@ export default function Projects() {
                                 className="stack"
                             />
                             <p>{pro.stack}</p>
-                            {pro.gif && (
+
+                            {screenSize < 900 || mQuery ? (
+                                <img
+                                    className="pro-img"
+                                    src={pro.gif}
+                                    alt={`screenshot of ${pro.name}`}
+                                />
+                            ) : (
                                 <GifPlayer
                                     className="gif"
                                     gif={pro.gif}
@@ -113,13 +133,7 @@ export default function Projects() {
                                     still={pro.image}
                                 />
                             )}
-                            {!pro.gif && (
-                                <img
-                                    className="pro-img"
-                                    src={pro.image}
-                                    alt={`screenshot of ${pro.name}`}
-                                />
-                            )}
+
                             {pro.url && (
                                 <a
                                     className="go-box project-icon rotate-center"
@@ -145,5 +159,18 @@ export default function Projects() {
 
 // className={`${pro.css}`}
 
-// autoplay
-// <img className="pro-img" src={pro.gif} alt={`screenshot of ${pro.name}`} />
+//                            {pro.gif && (
+//                                 <GifPlayer
+//                                     className="gif"
+//                                     gif={pro.gif}
+//                                     onClick={() => playOrPause()}
+//                                     still={pro.image}
+//                                 />
+//                             )}
+//                             {!pro.gif && (
+//                                 <img
+//                                     className="pro-img"
+//                                     src={pro.image}
+//                                     alt={`screenshot of ${pro.name}`}
+//                                 />
+//                             )}

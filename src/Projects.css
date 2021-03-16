@@ -242,7 +242,7 @@ a {
     }
 
     .pro-con {
-        margin: -55px 0 20px;
+        margin: -50px 0 20px;
     }
     .title-con {
         bottom: 880px;
@@ -257,6 +257,11 @@ a {
     }
     .pro p {
         font-size: 1em;
+    }
+
+    .pro-img {
+        height: 220px;
+        margin-bottom: 0px;
     }
 
     .pro-con .pro:first-child h2 {
