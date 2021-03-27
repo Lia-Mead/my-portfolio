@@ -17,20 +17,12 @@
     margin: 20px;
 }
 
-/* .pro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    padding: 1%;
-    border: 1px solid #eee;
-} */
-
 .pro p {
     width: 90%;
     min-height: 50px;
     font-size: 1.3em;
     color: white;
+    text-align: center;
 }
 
 .pro-con .pro:first-child h2 {
@@ -257,7 +249,6 @@ a {
     }
     .pro p {
         font-size: 1em;
-        text-align: center;
     }
 
     .pro-img {
