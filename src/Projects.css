@@ -257,6 +257,7 @@ a {
     }
     .pro p {
         font-size: 1em;
+        text-align: center;
     }
 
     .pro-img {
